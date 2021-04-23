@@ -7,19 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44330F692632E24000170E66 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44330F682632E24000170E66 /* DataController.swift */; };
+		44330F702632E93C00170E66 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44330F6F2632E93C00170E66 /* CloudKit.framework */; };
+		44330F722632EA2000170E66 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44330F712632EA2000170E66 /* HomeView.swift */; };
+		44330F752632EB1800170E66 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44330F742632EB1800170E66 /* ProjectView.swift */; };
 		44B1CDFB2631F636009CF232 /* Ultimate_PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1CDFA2631F636009CF232 /* Ultimate_PortfolioApp.swift */; };
 		44B1CDFD2631F636009CF232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1CDFC2631F636009CF232 /* ContentView.swift */; };
 		44B1CDFF2631F637009CF232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B1CDFE2631F637009CF232 /* Assets.xcassets */; };
 		44B1CE022631F637009CF232 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B1CE012631F637009CF232 /* Preview Assets.xcassets */; };
+		44B1CE0C2631F6A3009CF232 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44B1CE0A2631F6A3009CF232 /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44330F682632E24000170E66 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		44330F6B2632E91300170E66 /* Ultimate Portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ultimate Portfolio.entitlements"; sourceTree = "<group>"; };
+		44330F6F2632E93C00170E66 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		44330F712632EA2000170E66 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		44330F742632EB1800170E66 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		44B1CDF72631F636009CF232 /* Ultimate Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B1CDFA2631F636009CF232 /* Ultimate_PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_PortfolioApp.swift; sourceTree = "<group>"; };
 		44B1CDFC2631F636009CF232 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44B1CDFE2631F637009CF232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44B1CE012631F637009CF232 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44B1CE032631F637009CF232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B1CE0B2631F6A3009CF232 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44330F702632E93C00170E66 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44330F6E2632E93C00170E66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44330F6F2632E93C00170E66 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44B1CDEE2631F636009CF232 = {
 			isa = PBXGroup;
 			children = (
 				44B1CDF92631F636009CF232 /* Ultimate Portfolio */,
 				44B1CDF82631F636009CF232 /* Products */,
+				44330F6E2632E93C00170E66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +73,13 @@
 		44B1CDF92631F636009CF232 /* Ultimate Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				44330F6B2632E91300170E66 /* Ultimate Portfolio.entitlements */,
 				44B1CDFA2631F636009CF232 /* Ultimate_PortfolioApp.swift */,
+				44330F712632EA2000170E66 /* HomeView.swift */,
+				44330F742632EB1800170E66 /* ProjectView.swift */,
 				44B1CDFC2631F636009CF232 /* ContentView.swift */,
+				44B1CE0A2631F6A3009CF232 /* Main.xcdatamodeld */,
+				44330F682632E24000170E66 /* DataController.swift */,
 				44B1CDFE2631F637009CF232 /* Assets.xcassets */,
 				44B1CE032631F637009CF232 /* Info.plist */,
 				44B1CE002631F637009CF232 /* Preview Content */,
@@ -138,7 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44330F752632EB1800170E66 /* ProjectView.swift in Sources */,
+				44B1CE0C2631F6A3009CF232 /* Main.xcdatamodeld in Sources */,
+				44330F692632E24000170E66 /* DataController.swift in Sources */,
 				44B1CDFD2631F636009CF232 /* ContentView.swift in Sources */,
+				44330F722632EA2000170E66 /* HomeView.swift in Sources */,
 				44B1CDFB2631F636009CF232 /* Ultimate_PortfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +297,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ultimate Portfolio/Ultimate Portfolio.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Ultimate Portfolio/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GSY23CA7Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Ultimate Portfolio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -288,8 +320,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ultimate Portfolio/Ultimate Portfolio.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Ultimate Portfolio/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GSY23CA7Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Ultimate Portfolio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -326,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		44B1CE0A2631F6A3009CF232 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44B1CE0B2631F6A3009CF232 /* Main.xcdatamodel */,
+			);
+			currentVersion = 44B1CE0B2631F6A3009CF232 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 44B1CDEF2631F636009CF232 /* Project object */;
 }
